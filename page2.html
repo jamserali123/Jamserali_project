@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Qualification Page</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,300&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/241739021d.js" crossorigin="anonymous"></script>
+<script src="./validation.js"></script>
+    <style>
+
+            *{
+                margin:0;
+                padding:0;
+            
+            }
+            body{
+                background-image: url(./images/img3.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .box{
+                margin-bottom: 20px;
+
+            }
+            button:hover{
+                box-shadow:2px 5px 5px 5px rgba(0, 0, 0, .2);
+            }
+        form{
+            overflow: hidden;
+            box-shadow: 2px 5px 2px 1px rgba(0, 0, 0, .2);
+        }
+        .hsc >input{
+            
+            display: inline;
+            flex-direction: row;
+            width: 49%;
+           
+        } 
+        .ssc>input{
+            display: inline;
+            flex-direction: row;
+            width: 49%; 
+        }
+        .backlog>input{
+            display: inline;
+            flex-direction: row;
+            width: 49%; 
+        }
+        input:nth-child(even){
+            margin-left: 10px;
+        }
+        .container a:nth-child(even){
+            display: inline;
+           float: right;
+        }
+        #eduText{
+            color: blueviolet;
+            font-weight: 300;
+            text-shadow: 2px 2px 1px  green;
+        }
+
+        .container a{
+            border: 1px solid violet;
+                  
+                background: linear-gradient(to top, #013567 0%, #0195FA 100%);
+                color:white;
+        }
+        .container a:hover{
+            color:aqua;
+            
+            box-shadow: 2px 2px 1px  rgba(0, 0, 0, .6) ;
+            z-index: -1;
+            transition: .5s;
+        }
+    </style>
+
+
+</head>
+<body class="container-fluid">
+    <div class="box">
+        <form action="#" class="form-control w-75 mt-2 " name="myForm" onsubmit="return validateForm()" method="post" style="margin-left:12% ;">
+            <h2 class="display-5 pt-4  text-center mb-2"id="eduText"> <b>Educational Qualification</b> </h2>
+           
+           <!-----------HSC Details--------------->
+            <label for="insName">Institute Name</label>
+            <input type="text" class="form-control w-100 mt-4 mb-4 " id="insName" name="ins_name" placeholder="Hsc Institute Name">
+            
+            <div class="hsc">
+                <label for="insName">HSC Board</label><br>
+                <input type="text" class="form-control mt-4 mb-4  " id="hsc_board"name="hsc_board" placeholder="HSC Board (i.e CBSC, ICSC or State board)">
+    
+               
+                <input type="text" class="form-control  mt-4  mb-4 " id="hsc_score" name="hsc_score" placeholder="Score in HSC in percentage">
+    
+
+            </div>
+
+            <!-----------SSC Details--------------->
+            <label for="insName">SSC Institution name</label>
+            <input type="text" class="form-control  mt-4 mb-4  " id="ssc_name" name="ssc_name"placeholder="SSC Institution name">
+
+                <div class="ssc">
+                    <label for="insName">SSC Board </label><br>
+                     <input type="text" class="form-control  mt-4 mb-4 " id="ssc_board" name="ssc_board"placeholder="SSC Board (i.e CBSC, ICSC or State board)     ">
+
+                    <input type="text" class="form-control  mt-4 mb-4 " id="ssc_score" name="ssc_score" placeholder="Score in SSC in percentage">
+                </div>
+            
+
+
+
+            <!-----------Current Details--------------->
+            <label for="insName"> Currently pursuing</label>
+            <input type="text" class="form-control w-100 mt-4 mb-4 " id="persue"Name="persue" placeholder="Currently pursuing">
+
+            <label for="insName">Current educational institution name</label>
+            <input type="text" class="form-control w-100 mt-4 mb-4 " id="c_insName" name="c_insName" placeholder="Current educational institution name">
+
+                <!---------Backlog Details------------->
+            <div class="backlog">
+                <label for="insName"> Overall percentage</label><br>
+                <input type="text" class="form-control mt-4 mb-4 " id="ovr_percent" name="ovr_percent" placeholder="Overall percentage">
+    
+                <input type="text" class="form-control  mt-4 mb-4 " id="backlog"name="backlog" placeholder="Current backlogs if any">
+    
+            </div>
+           
+            <div class="container mb-4 mt-4"  >
+                <a class="btn  " href="./index.html" > <span><i class="fa-solid fa-arrow-left-long"></i></span> Back to Previous Page</a>
+
+                <a class="btn  " href="./fileUpload3.html" >Save and Continue <span><i class="fa-solid fa-arrow-right-long"></i></span> </a>
+                
+            </div>
+
+        </form>
+
+
+
+    </div>
+
+
+
+
+    
+</body>
+</html>

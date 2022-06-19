@@ -1,0 +1,81 @@
+#contactpage form {
+    overflow: hidden;
+    display: block;
+    }
+
+#contactpage form label {
+    margin-top:12px;
+    font-size: 1.15em;
+    color: #333333;
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.2;
+    }
+
+#contactpage form input {
+    border: 1px solid #DDDDDD;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -khtml-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+
+#contactpage form input[type='text']{
+    width: 35%;
+    display: inline!important;
+    background: #F9F9F9;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.4;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+#contactpage form input[type='email'],
+#contactpage form input[type='tel'],
+#contactpage form input[type='date'],
+#contactpage form textarea {
+    width: 94%;
+    display: block;
+    background: #F9F9F9;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.4;
+    padding: 6px;
+    }
+
+#contactpage form input[type='submit'] {    
+    float:right;
+    clear:both;
+    display: block;
+    background: #F9F9F9;
+    color: #333333;
+    font-size: 1.5em;
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.2;
+    padding: 20px 20px 40px;
+    }
+
+#contactpage form input[type='submit']:hover {
+    color: #FFFFFF;
+    background: #ecdfdd;
+    }
+
+    
+#contactpage{
+    display:flex;
+    max-width: 600px;
+  margin: auto;
+  border: 3px solid #e9ebe6;
+  
+    
+
+}

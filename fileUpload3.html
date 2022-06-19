@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,300&family=Roboto:ital,wght@0,400;1,300&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/241739021d.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+      body{
+                background-image: url(./images/img3.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+          h2{
+            color: blueviolet;
+           margin-top: 20px;
+          }
+    
+
+
+    .container {
+
+      border: 2px solid black;
+      max-width: 70%;
+      width: 100%;
+      box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.5);
+      margin-bottom: 40px;
+      border-radius: 10px;
+      background-color: aliceblue;
+
+
+    }
+
+    form {
+      margin-left: 20px;
+    }
+
+    .fileUpload {
+      display: flex;
+      align-items: center;
+
+    }
+
+    label {
+      width: 250px;
+      font-weight: 400;
+    }
+
+    #upload1,
+    #upload2,
+    #upload3,
+    #upload4 {
+
+      margin-left: 30px;
+      background: linear-gradient(to top, #013567 0%, #0195FA 100%);
+      color: white;
+      
+      
+    }
+
+    #fileText{
+      font-weight: 500;
+     text-shadow: 2px 2px 1px  green;
+    }
+
+        form div .btn{
+      background: linear-gradient(to top, #013567 0%, #0195FA 100%);
+      color: white;
+    }
+    #savebtn{
+      background: linear-gradient(to top, #013567 0%, #0195FA 100%);
+      color: white;
+      
+      margin-left: 300px;
+      margin-top: 5%;
+
+    }
+    #backbtn{
+      background: linear-gradient(to top, #013567 0%, #0195FA 100%);
+      color: white;
+    }
+    #savebtn:hover{
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+        color:aqua;
+
+    }
+    #backbtn:hover{
+      box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+        color:aqua;
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2 class="display-5 mb-4 text-center" id="fileText">File Upload</h2>
+    <form action="#" method="post" enctype="multipart/form-data" name="form1">
+
+      <div class="fileUpload mb-3">
+        <label for="formFileMultiple" class="form-label">Recent passport size photograph (image size less than
+          4MB)</label>
+        <input class="form-control w-50" type="file" id="formFileMultiple" multiple>
+        <button class="btn  " type="button" id="upload1"><span><i class="fa-solid fa-upload"></i></span>
+          Upload</button>
+      </div>
+      <div class="fileUpload mb-3">
+        <label for="formFileMultiple" class="form-label">HSC mark sheet (image, PDF or docs size less than 4MB)</label>
+        <input class="form-control w-50" type="file" id="formFileMultiple" multiple>
+        <button class="btn  " type="button" id="upload2"><span><i class="fa-solid fa-upload"></i></span>
+          Upload</button>
+      </div>
+
+      <div class="fileUpload mb-3">
+        <label for="formFileMultiple" class="form-label">SSC mark sheet (image, PDF or docs size less than 4MB)</label>
+        <input class="form-control w-50" type="file" id="formFileMultiple" multiple>
+        <button class="btn  " type="button" id="upload3"><span><i class="fa-solid fa-upload"></i></span>
+          Upload</button>
+      </div>
+
+      <div class="fileUpload mb-3">
+        <label for="formFileMultiple" class="form-label">All semesters mark sheet in a single PDF or docs (file size
+          less than 10MB)</label>
+        <input class="form-control w-50" type="file" id="formFileMultiple" multiple>
+        <button class="btn  " type="button" id="upload4"><span><i class="fa-solid fa-upload"></i></span>
+          Upload</button>
+      </div>
+      <a class="btn " id="backbtn"href="./page2.html"> <span><i class="fa-solid fa-arrow-left-long"></i></span> Back to
+        Previous Page</a>
+      <button class="btn  w-25 mb-5" type="button" id="savebtn">Final Submit</button>
+
+    </form>
+
+
+  </div>
+
+
+
+</body>
+
+</html>
